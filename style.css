@@ -1,0 +1,55 @@
+body {
+    background: #eee;
+    color: rgb(42, 42, 42);
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container {
+    max-width: 400px;
+    background: #fff;
+    box-shadow:0 20px 40px rgb(0, 0, 0,0.1);
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td {
+    font-size: 2em;
+    padding: 0.7em;
+    text-align: center;
+    cursor: default;
+    transition: 0.2s;
+}
+
+td:hover {
+    background: rgb(199, 199, 199);
+}
+
+input {
+    padding: 25px 0 10px 0;
+    width: 100%;
+    border:0;
+    font-size: 2em;
+    background-color: #333;
+    color: #eee;
+    text-align: right;
+}
+
+.vari {
+    background-color: rgb(70, 70, 70);
+    color: #eee;
+}
+
+.vari:hover {
+    background-color: #222;
+}
+
+.equalbtn {
+    background-color: rgb(255, 168, 51);
+}
