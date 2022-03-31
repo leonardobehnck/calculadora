@@ -6,44 +6,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora Js</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
 <body>
     <div class="container">
-        <input type="text" id="useinp" placeholder="0"/>
-        <input type="text" id="compout" placeholder="0"/>
-            <table>
+        <input type="text" id="userInp">
+        <input type="text" id="compOut">
+            <table onclick="calc(event)">
                 <tr>
-                    <td onclick="calcad('(')">(</td>
-                    <td onclick="calcad(')')">)</td>
-                    <td onclick="removech()">&lt;-</td>
-                    <td onclick="calcad('+')" class="vari">+</td>
+                    <td>(</td>
+                    <td>)</td>
+                    <td></td>
+                    <td class="vari">+</td>
                 </tr>
                 <tr>
-                    <td onclick="calcad('7')">7</td>
-                    <td onclick="calcad('8')">8</td>
-                    <td onclick="calcad('9')">9</td>
-                    <td onclick="calcad('-')" class="vari">-</td>
+                    <td>7</td>
+                    <td>8</td>
+                    <td>9</td>
+                    <td class="vari">-</td>
                 </tr>
                 <tr>
-                    <td onclick="calcad('4')">4</td>
-                    <td onclick="calcad('5')">5</td>
-                    <td onclick="calcad('6')">6</td>
-                    <td onclick="calcad('*')" class="vari">*</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td class="vari">*</td>
                 </tr>
                 <tr>
-                    <td onclick="calcad('1')">1</td>
-                    <td onclick="calcad('2')">2</td>
-                    <td onclick="calcad('3')">3</td>
-                    <td onclick="calcad('/')" class="vari">/</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td class="vari">/</td>
                 </tr>
                 <tr>
-                    <td onclick="reset()"><strong>C</strong></td>
-                    <td onclick="calcad('0')">0</td>
-                    <td onclick="calcad('.')">.</td>
-                    <td class="equalbtn" onclick="execm()">=</td>
+                    <td>C</td>
+                    <td>0</td>
+                    <td>.</td>
+                    <td class="equalbtn">=</td>
                 </tr>
             </table>
     </div>
-    <script src="script.js"></script>
+    
 </body>
 </html>

@@ -1,32 +1,25 @@
-var tbcal = ''
-const useinp = document.getElementById('useinp')
-const compinp = document.getElementById('compout')
-function calcad(value) {
-    tbcal += value
-    useinp.value = tbcal
-}
+let updateMode = false
 
-function removech() {
-    tbcal = tbcal.substring(0, tbcal.length - 1)
-    useinp.value = tbcal
-}
+function calc(event) {
+    let op = event.srcElement.innerHTML
 
-function execm() {
-    if (tbcal.length == 0 || tbcal =='') {
-        alert('Digite um número.')
-        return
-    }
-    try {
-        ans = eval(tbcal)
-        compinp.value = ans
-    }
-    catch (err){
-        alert('Entrada inválida')
-    }
-}
+        if (updateMode) {
+            updateMode = false
+                if (parseInt(op) > 0) {
+                    document.getElementById('userInp').value = op
+                    return
+                }
+        }
 
-function reset() {
-    useinp.value = ''
-    compinp.value = ''
-    tbcal = ''
+        if (op == "C") {
+            document.getElementById('userInp').value = ""
+            return
+        }
+
+        if (op != "=") {
+            document.getElementById('userInp').value += op
+        }   else {
+            document.getElementById('userInp').value = eval(document.getElementById('userInp').value)
+            updateMode = true
+        }
 }
