@@ -11,9 +11,6 @@
 
 ## :hammer: Funcionalidades do projeto
 
-- `Funcionalidade 1`:
-- `Funcionalidade 2`:
-- `Funcionalidade 3`:
-- `Funcionalidade 4`:
+- `Função`: Calculadora de operações básicas
 
 ![Badge em Desenvolvimento](http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge)
